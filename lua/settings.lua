@@ -1,37 +1,6 @@
 -- theme darkplus
 vim.cmd[[colorscheme darkplus]]
 
--- luline
--- require('lualine').setup {
---   options = {
---     icons_enabled = true,
--- 		theme = 'auto',
---     component_separators = { left = '', right = ''},
---     section_separators = { left = '', right = ''},
---     disabled_filetypes = {},
---     always_divide_middle = true,
---     globalstatus = false,
---   },
---   sections = {
---     lualine_a = {'mode'},
---     lualine_b = {'branch', 'diff', 'diagnostics'},
---     lualine_c = {'filename'},
---     lualine_x = {'encoding', 'fileformat', 'filetype'},
---     lualine_y = {'progress'},
---     lualine_z = {'location'}
---   },
---   inactive_sections = {
---     lualine_a = {},
---     lualine_b = {},
---     lualine_c = {'filename'},
---     lualine_x = {'location'},
---     lualine_y = {},
---     lualine_z = {}
---   },
---   tabline = {},
---   extensions = {}
--- }
-
 -- nvim-surround
 require('nvim-surround').setup()
 
@@ -42,33 +11,17 @@ require('telescope').setup()
 require('nvim_comment').setup()
 
 -- nvim-autopairs
-require("nvim-autopairs").setup({
-	disable_filetype = { "TelescopePrompt" , "vim" },
-})
+-- require("nvim-autopairs").setup({
+-- 	disable_filetype = { "TelescopePrompt" , "vim" },
+-- })
 
 -- hop
-require("hop").setup({
-	keys = 'etovxqpdygfblzhckisuran'
-})
+-- require("hop").setup({
+-- 	keys = 'etovxqpdygfblzhckisuran'
+-- })
 
 -- trouble
 require('trouble').setup({})
-
--- bufferline
--- require("bufferline").setup{
--- 	options = {
--- 		show_buffer_close_icons = false,
---     show_close_icon = false,
---     offsets = {
---         {
---             filetype = "NvimTree",
---             text = "File Explorer",
---             highlight = "Directory",
---             separator = true
---         }
---     }
--- 	}
--- }
 
 -- nvim-tree
 require("nvim-tree").setup({
