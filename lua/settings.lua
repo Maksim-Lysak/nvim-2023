@@ -24,48 +24,48 @@ require('nvim_comment').setup()
 require('trouble').setup({})
 
 -- nvim-tree
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-})
+-- require("nvim-tree").setup({
+--   sort_by = "case_sensitive",
+--   view = {
+--     adaptive_size = true,
+--     mappings = {
+--       list = {
+--         { key = "u", action = "dir_up" },
+--       },
+--     },
+--   },
+--   renderer = {
+--     group_empty = true,
+--   },
+--   filters = {
+--     dotfiles = true,
+--   },
+-- })
 
 -- tree-sitter
-require'nvim-treesitter.configs'.setup {
-	-- Нужные парсеры
-	ensure_installed = {
-		"css", "vim", "html", "json", "tsx", "php", "regex", "markdown", "markdown_inline", "http", "graphql", "bash", "cpp", "arduino", "scss", "javascript", "python", "lua", "typescript","vue", "dockerfile"
-	},
-	-- Устанавливать парсеры синхронно
-	sync_install = false,
-	-- Включить автозакрытие тегов
-	autotag = {
-    enable = true,
-  },
-	-- Подсветка
-	highlight = {
-		-- Включить расшируение
-		enable = true,
-		disable = {},
-	},
-	indent = {
-		-- Включить indent
-		enable = false,
-		disable = {},
-	}
-}
+-- require'nvim-treesitter.configs'.setup {
+-- 	-- Нужные парсеры
+-- 	ensure_installed = {
+-- 		"css", "vim", "html", "json", "tsx", "php", "regex", "markdown", "markdown_inline", "http", "graphql", "bash", "cpp", "arduino", "scss", "javascript", "python", "lua", "typescript","vue", "dockerfile"
+-- 	},
+-- 	-- Устанавливать парсеры синхронно
+-- 	sync_install = false,
+-- 	-- Включить автозакрытие тегов
+-- 	autotag = {
+--     enable = true,
+--   },
+-- 	-- Подсветка
+-- 	highlight = {
+-- 		-- Включить расшируение
+-- 		enable = true,
+-- 		disable = {},
+-- 	},
+-- 	indent = {
+-- 		-- Включить indent
+-- 		enable = false,
+-- 		disable = {},
+-- 	}
+-- }
 
 require('code_runner').setup({
   -- put here the commands by filetype
@@ -219,10 +219,3 @@ null_ls.setup({
     },
 })
 
--- require('lspconfig')['tsserver'].setup{
---     on_attach = function(client)
---         client.server_capabilities.document_formatting = false
---         client.server_capabilities.document_range_formatting = false
---     end,
---     flags = lsp_flags,
--- }
