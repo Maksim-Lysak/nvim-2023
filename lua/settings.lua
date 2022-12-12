@@ -2,10 +2,10 @@
 vim.cmd[[colorscheme darkplus]]
 
 -- nvim-surround
-require('nvim-surround').setup()
+-- require('nvim-surround').setup()
 
 -- telescope
-require('telescope').setup()
+-- require('telescope').setup()
 
 -- nvim-comment
 -- require('nvim_comment').setup()
