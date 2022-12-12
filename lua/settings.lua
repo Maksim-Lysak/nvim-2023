@@ -8,7 +8,7 @@ require('nvim-surround').setup()
 require('telescope').setup()
 
 -- nvim-comment
-require('nvim_comment').setup()
+-- require('nvim_comment').setup()
 
 -- nvim-autopairs
 -- require("nvim-autopairs").setup({
@@ -21,7 +21,7 @@ require('nvim_comment').setup()
 -- })
 
 -- trouble
-require('trouble').setup({})
+-- require('trouble').setup({})
 
 -- nvim-tree
 -- require("nvim-tree").setup({
