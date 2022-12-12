@@ -12,4 +12,6 @@ require('plugins.configs.code-runner')
 require('plugins.configs.null_ls')
 require('plugins.configs.lsp')
 require('plugins.configs.lsp-saga')
-
+require('plugins.configs.cmp')
+require('plugins.configs.darkplus')
+require('plugins.configs.nvim-ts-autotag')

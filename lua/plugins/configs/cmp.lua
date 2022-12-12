@@ -1,10 +1,3 @@
--- theme darkplus
-vim.cmd[[colorscheme darkplus]]
-
-
--- nvim-ts-autotag
-require('nvim-ts-autotag').setup()
-
 
 -- CMP
 local cmp = require('cmp')
