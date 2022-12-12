@@ -8,5 +8,6 @@ require('plugins.configs.trouble')
 require('plugins.configs.nvim-comment')
 require('plugins.configs.telescope')
 require('plugins.configs.nvim-surround')
-
+require('plugins.configs.code-runner')
+require('plugins.configs.null_ls')
 

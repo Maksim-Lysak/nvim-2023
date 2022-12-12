@@ -67,15 +67,15 @@ vim.cmd[[colorscheme darkplus]]
 -- 	}
 -- }
 
-require('code_runner').setup({
-  -- put here the commands by filetype
-	focus = false,
-  filetype = {
-		python = "python3 -u",
-		-- typescript = "node run",
-		javascript = "node"
-	},
-})
+-- require('code_runner').setup({
+--   -- put here the commands by filetype
+-- 	focus = false,
+--   filetype = {
+-- 		python = "python3 -u",
+-- 		-- typescript = "node run",
+-- 		javascript = "node"
+-- 	},
+-- })
 
 -- nvim-ts-autotag
 require('nvim-ts-autotag').setup()
@@ -204,18 +204,18 @@ cmp.setup{
 
 
 -- null_ls
-local null_ls = require("null-ls")
-
-local formatting = null_ls.builtins.formatting
-local diagnostics = null_ls.builtins.diagnostics
-
-null_ls.setup({
-    sources = {
-    	formatting.prettier.with({ extra_args = {
-				"--single-quote", "--jsx-single-quote"
-			}}) 
-
-        -- null_ls.builtins.diagnostics.eslint,
-    },
-})
-
+-- local null_ls = require("null-ls")
+--
+-- local formatting = null_ls.builtins.formatting
+-- local diagnostics = null_ls.builtins.diagnostics
+--
+-- null_ls.setup({
+--     sources = {
+--     	formatting.prettier.with({ extra_args = {
+-- 				"--single-quote", "--jsx-single-quote"
+-- 			}}) 
+--
+--         -- null_ls.builtins.diagnostics.eslint,
+--     },
+-- })
+--

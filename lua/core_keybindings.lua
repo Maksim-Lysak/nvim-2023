@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 
 -- 'jj' в замен 'Esc' 
-keymap('i', 'jk', '<Esc>', opts)
+keymap('i', 'kj', '<Esc>', opts)
 
 -- Переход на следующую строку как 'crl-enter'
 keymap('', '<M-o>', ':<Esc>o', opts)
