@@ -8,12 +8,24 @@ local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
-    sources = {
-    	formatting.prettier.with({ extra_args = {
-				"--single-quote", "--jsx-single-quote"
-			}}) 
-
-        -- null_ls.builtins.diagnostics.eslint,
-    },
+	sources = {
+		formatting.stylelint,
+		formatting.prettier.with({
+			-- filetypes = { "js", "ts", "jsx", "tsx", "json" },
+			extra_args = {
+				"--single-quote",
+				"--jsx-single-quote"
+			},
+		}),
+		diagnostics.eslint.with({
+			diagnostic_config = {
+				-- see :help vim.diagnostic.config()
+				underline = true,
+				virtual_text = false,
+				signs = false,
+				update_in_insert = false,
+				severity_sort = true,
+			},
+		})
+	},
 })
-

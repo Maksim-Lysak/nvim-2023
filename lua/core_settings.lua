@@ -1,7 +1,6 @@
 local g = vim.g       -- global variables
 local opt = vim.opt   -- global / buffer / windows-scoped options
 local cmd = vim.cmd   -- выполнять команды Vim
--- local exec = vim.api.nvim_exec  -- execute Vimscript
 
 -- настройки для nvim-tree
 g.loaded = 1

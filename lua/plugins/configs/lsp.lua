@@ -28,7 +28,12 @@ local lspconfig = require 'lspconfig'
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 -- удалить ошибки диагностики в левом столбце (SignColumn)
-vim.diagnostic.config({ signs = false })
+vim.diagnostic.config({
+	signs = false,
+	virtual_text = false
+})
+
+-- Убрать виртуальный тексе
 
 -- Добавляем возможность использовать сниппеты
 capabilities.textDocument.completion.completionItem.snippetSupport = true
