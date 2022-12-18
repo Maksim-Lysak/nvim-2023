@@ -14,15 +14,15 @@ keymap("n", 'Gd', '<cmd>Gitsigns blame_line<CR>', opts)
 keymap("n", 'Gp', '<cmd>Gitsigns preview_hunk<CR>', opts)
 
 -- hop
-keymap("", ".l", ":HopLine<cr>", opts)
-keymap("", ".s", ":HopChar2<cr>", opts)
-keymap("", ".w", ":HopWordCurrentLine<cr>", opts)
+keymap("", "<leader>l", ":HopLine<cr>", opts)
+keymap("", "<leader>s", ":HopChar2<cr>", opts)
+keymap("", "<leader>w", ":HopWordCurrentLine<cr>", opts)
 
 -- telescope
-keymap("", ".fb", ":Telescope buffers<CR>", opts)
-keymap("", ".fg", ":Telescope live_grep<CR>", opts)
-keymap("", ".fh", ":Telescope help_tags<CR>", opts)
-keymap("", ".ff", ":Telescope find_files<CR>", opts)
+keymap("", "<leader>fb", ":Telescope buffers<CR>", opts)
+keymap("", "<leader>fg", ":Telescope live_grep<CR>", opts)
+keymap("", "<leader>fh", ":Telescope help_tags<CR>", opts)
+keymap("", "<leader>ff", ":Telescope find_files<CR>", opts)
 
 -- Trouble
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
