@@ -1,6 +1,5 @@
 -- CMP
 local cmp = require('cmp')
-local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 
 cmp.setup {
@@ -30,12 +29,6 @@ cmp.setup {
 		-- { name = 'cmdline'}
 	}, {
 	}),
-	formatting = {
-		format = lspkind.cmp_format({
-			mode = 'symbol', -- show only symbol annotations
-			maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-		})
-	}
 }
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
@@ -54,3 +47,5 @@ cmp.setup.cmdline(':', {
 		{ name = 'cmdline' }
 	})
 })
+
+

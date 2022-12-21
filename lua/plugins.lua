@@ -32,7 +32,6 @@ return require('packer').startup(function(use)
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
 	-- LSP
-	use 'onsails/lspkind-nvim'
 	use 'neovim/nvim-lspconfig'
 	use 'williamboman/nvim-lsp-installer'
 	use { "glepnir/lspsaga.nvim", branch = "main", }

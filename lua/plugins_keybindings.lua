@@ -6,8 +6,8 @@ keymap('n', '>', ':BufferLineCycleNext<CR>', opts)
 keymap('n', '<', ':BufferLineCyclePrev<CR>', opts)
 
 -- nvim-tree
-keymap("", 'nf', ':NvimTreeFindFile<CR>', opts)
-keymap("", 'nn', ':NvimTreeRefresh<CR>:NvimTreeToggle<CR>', opts)
+keymap("", '<leader>f', ':NvimTreeFindFile<CR>', opts)
+keymap("", '<leader>n', ':NvimTreeRefresh<CR>:NvimTreeToggle<CR>', opts)
 
 -- Git
 keymap("n", 'Gd', '<cmd>Gitsigns blame_line<CR>', opts)
@@ -54,12 +54,9 @@ keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
 -- when you use action in finder like open vsplit then you can
 -- use <C-t> to jump back
 keymap("n", "gD", "<cmd>Lspsaga lsp_finder<CR>", opts)
-
 -- Code action
 keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
-
 -- Rename
 keymap("n", "gr", "<cmd>Lspsaga rename<CR>", opts)
-
 -- Peek Definition
 keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts)

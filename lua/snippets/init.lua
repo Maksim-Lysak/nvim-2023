@@ -20,10 +20,14 @@ local conds = require("luasnip.extras.conditions")
 local conds_expand = require("luasnip.extras.conditions.expand")
 
 
-
 ls.add_snippets("all", {
 	s('co', {
 		i('console.log($1)')
+	}),
+	s("cortime", {
+		f(function ()
+			return os.date "%D -%H:%M"
+		end)
 	}),
 })
 
@@ -31,3 +35,18 @@ ls.add_snippets("lua", {
 	s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) }))
 })
 
+ls.add_snippets("javascript",  {
+	s("cl",
+		{
+			t("console.log("),i(1),t(")")
+		}
+	),
+	s("af",
+	{
+		t("("), i(1), t(") => "), i(2)
+	}),
+	s("im",
+	{
+		t("import "), i(2), t(" from '"), i(1), t("'")
+	})
+})
