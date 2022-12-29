@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 
 	-- Comment
 	use 'terrortylor/nvim-comment'
+	use 'numToStr/Comment.nvim'
 
 	-- Functional side menu
 	use 'kyazdani42/nvim-tree.lua'

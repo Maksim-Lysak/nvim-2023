@@ -6,7 +6,7 @@ keymap('n', '>', ':BufferLineCycleNext<CR>', opts)
 keymap('n', '<', ':BufferLineCyclePrev<CR>', opts)
 
 -- nvim-tree
-keymap("", '<leader>f', ':NvimTreeFindFile<CR>', opts)
+keymap("", '<leader>cf', ':NvimTreeFindFile<CR>', opts)
 keymap("", '<leader>n', ':NvimTreeRefresh<CR>:NvimTreeToggle<CR>', opts)
 
 -- Git
@@ -34,7 +34,7 @@ keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
 
 -- code_runner
 keymap('n', '<leader>r', ':RunCode<CR>', opts)
-keymap('n', '<leader>rf', ':RunFile<CR>', opts)
+keymap('n', '<leader>rf', ':w<CR>:RunFile<CR>', opts)
 keymap('n', '<leader>rft', ':RunFile tab<CR>', opts)
 keymap('n', '<leader>rp', ':RunProject<CR>', opts)
 keymap('n', '<leader>rc', ':RunClose<CR>', opts)

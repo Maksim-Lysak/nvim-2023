@@ -5,7 +5,7 @@ if not status_ok then
 end
 
 runner.setup({
-	focus = false,
+	focus = true,
   filetype = {
 		python = "python3 -u",
 		javascript = "node"
