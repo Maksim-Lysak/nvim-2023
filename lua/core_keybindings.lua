@@ -14,7 +14,7 @@ keymap('', '<M-o>', ':<Esc>o', opts)
 keymap('n', '<C-l>', ':noh<CR>', opts)
 
 -- перевести курсор в конец строки в режиме ввода
-keymap('i', '<leader>.', '<Esc>$a', opts)
+keymap('i', '<leader>.', '<Esc>A', opts)
 
 -- работа с буфером
 keymap('', 'gw', ':w<CR>', opts)										-- сохранить текущий буфер

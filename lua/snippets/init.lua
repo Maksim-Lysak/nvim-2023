@@ -41,6 +41,10 @@ ls.add_snippets("javascript",  {
 			t("console.log("),i(1),t(")")
 		}
 	),
+	s("ea",
+	{
+		t("() => "), i(1)
+	}),
 	s("af",
 	{
 		t("("), i(1), t(") => "), i(2)
