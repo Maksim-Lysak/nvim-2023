@@ -32,9 +32,24 @@ ls.add_snippets("all", {
 })
 
 ls.add_snippets("lua", {
-	s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) }))
+	s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
+	s("test", fmt("one{} = two{} tree{}", { i(1,""), i(2,""), i(3,"")})),
+	s(
+		'ml',
+		fmt(
+			[[
+				local {} = function({})
+					{}
+				end
+			]],
+			{
+				i(1,""),
+				i(2,""),
+				i(3,""),
+			}
+		)
+	)
 })
-
 ls.add_snippets("javascript",  {
 	s("cl",
 		{

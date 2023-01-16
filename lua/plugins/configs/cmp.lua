@@ -12,13 +12,13 @@ cmp.setup {
 
 	-- Клавиши, которые будут взаимодействовать в nvim-cmp
 	mapping = cmp.mapping.preset.insert({
-		['<M-[>'] = cmp.mapping.scroll_docs(-4),
-		['<M-]>'] = cmp.mapping.scroll_docs(4),
+		['<C-[>'] = cmp.mapping.scroll_docs(-4),
+		['<C-]>'] = cmp.mapping.scroll_docs(4),
 		['<C-Space>'] = cmp.mapping.complete(),
-		['<M-e>'] = cmp.mapping.abort(),
+		['<C-e>'] = cmp.mapping.abort(),
 		['<Tab>'] = cmp.mapping.confirm({ select = true }),
-		['<M-p>'] = cmp.mapping.select_prev_item(),
-		['<M-n>'] = cmp.mapping.select_next_item()
+		['<C-p>'] = cmp.mapping.select_prev_item(),
+		['<C-n>'] = cmp.mapping.select_next_item()
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' }, -- LSP 👄
@@ -26,8 +26,6 @@ cmp.setup {
 		{ name = 'luasnip' }, -- Luasnip 🐌
 		{ name = 'buffer' }, -- Буфферы 🐃
 		{ name = 'path' }, -- Пути 🪤
-		-- { name = 'cmdline'}
-	}, {
 	}),
 }
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
@@ -47,5 +45,3 @@ cmp.setup.cmdline(':', {
 		{ name = 'cmdline' }
 	})
 })
-
-
