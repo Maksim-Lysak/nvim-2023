@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
 
 	-- Colorshems
 	use 'martinsione/darkplus.nvim'
+	use 'folke/tokyonight.nvim'
 
 	-- Status line
 	use 'nvim-lualine/lualine.nvim'

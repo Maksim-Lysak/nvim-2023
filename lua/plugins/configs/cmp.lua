@@ -25,7 +25,7 @@ cmp.setup {
 		{ name = 'nvim_lsp_signature_help' }, -- Помощь при введении параметров в методах 🚁
 		{ name = 'luasnip' }, -- Luasnip 🐌
 		{ name = 'buffer' }, -- Буфферы 🐃
-		{ name = 'path' }, -- Пути 🪤
+		-- { name = 'path' }, -- Пути 🪤
 	}),
 }
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).

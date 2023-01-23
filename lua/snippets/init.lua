@@ -25,7 +25,7 @@ ls.add_snippets("all", {
 		i('console.log($1)')
 	}),
 	s("cortime", {
-		f(function ()
+		f(function()
 			return os.date "%D -%H:%M"
 		end)
 	}),
@@ -33,7 +33,7 @@ ls.add_snippets("all", {
 
 ls.add_snippets("lua", {
 	s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
-	s("test", fmt("one{} = two{} tree{}", { i(1,""), i(2,""), i(3,"")})),
+	s("test", fmt("one{} = two{} tree{}", { i(1, ""), i(2, ""), i(3, "") })),
 	s(
 		'ml',
 		fmt(
@@ -43,29 +43,29 @@ ls.add_snippets("lua", {
 				end
 			]],
 			{
-				i(1,""),
-				i(2,""),
-				i(3,""),
+				i(1, ""),
+				i(2, ""),
+				i(3, ""),
 			}
 		)
 	)
 })
-ls.add_snippets("javascript",  {
+ls.add_snippets("javascript", {
 	s("cl",
 		{
-			t("console.log("),i(1),t(")")
+			t("console.log("), i(1), t(")")
 		}
 	),
 	s("ea",
-	{
-		t("() => "), i(1)
-	}),
+		{
+			t("() => "), i(1)
+		}),
 	s("af",
-	{
-		t("("), i(1), t(") => "), i(2)
-	}),
+		{
+			t("("), i(1), t(") => "), i(2)
+		}),
 	s("im",
-	{
-		t("import "), i(2), t(" from '"), i(1), t("'")
-	})
+		{
+			t("import "), i(2), t(" from '"), i(1), t("'")
+		})
 })
