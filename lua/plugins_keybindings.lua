@@ -22,7 +22,7 @@ keymap("", "<leader>w", ":HopWordCurrentLine<cr>", opts)
 keymap("", "<leader>fb", ":Telescope buffers<CR>", opts)
 keymap("", "<leader>fg", ":Telescope live_grep<CR>", opts)
 keymap("", "<leader>fh", ":Telescope help_tags<CR>", opts)
-keymap("", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap("", "<leader>ff", ":Telescope find_files hidden=true<CR>", opts)
 
 -- Trouble
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)

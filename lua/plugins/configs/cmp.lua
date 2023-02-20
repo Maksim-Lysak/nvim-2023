@@ -21,11 +21,10 @@ cmp.setup {
 		['<C-n>'] = cmp.mapping.select_next_item()
 	}),
 	sources = cmp.config.sources({
-		{ name = 'nvim_lsp' }, -- LSP 👄
-		{ name = 'nvim_lsp_signature_help' }, -- Помощь при введении параметров в методах 🚁
-		{ name = 'luasnip' }, -- Luasnip 🐌
-		{ name = 'buffer' }, -- Буфферы 🐃
-		-- { name = 'path' }, -- Пути 🪤
+		{ name = 'nvim_lsp' }, -- LSP
+		{ name = 'nvim_lsp_signature_help' }, -- Помощь при ведении параметров в методах
+		{ name = 'luasnip' }, -- Luasnip
+		{ name = 'buffer' }, -- Буфферы
 	}),
 }
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).

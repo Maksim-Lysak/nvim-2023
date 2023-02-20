@@ -48,8 +48,24 @@ ls.add_snippets("lua", {
 				i(3, ""),
 			}
 		)
+	),
+	s(
+		'cnode',
+		fmt(
+			[[
+				local {} = function({})
+					{}
+				end
+			]],
+			{
+				i(1, ""),
+				c(2, {t("one"), t("two")}),
+				i(3, ""),
+			}
+		)
 	)
 })
+
 ls.add_snippets("javascript", {
 	s("cl",
 		{
@@ -69,3 +85,5 @@ ls.add_snippets("javascript", {
 			t("import "), i(2), t(" from '"), i(1), t("'")
 		})
 })
+
+

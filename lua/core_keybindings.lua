@@ -58,4 +58,4 @@ keymap('i', '<M-[>', '<Esc>:m .+1<CR>==gi', opts)
 keymap('i', '<M-]>', '<Esc>:m .-2<CR>==gi', opts)
 
 -- [[ форматирование текста ]]
-keymap('', '<leader>d', ':lua vim.lsp.buf.format({async=true})<CR>', opts)
+keymap('', '<leader>lf', ':lua vim.lsp.buf.format({async=true})<CR>', opts)

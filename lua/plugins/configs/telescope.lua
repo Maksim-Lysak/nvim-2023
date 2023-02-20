@@ -5,5 +5,7 @@ if not status_ok then
 end
 
 telescope.setup({
-	 defaults = { file_ignore_patterns = { "node_modules" }}
+	defaults = {
+		file_ignore_patterns = { "node_modules", ".git"},
+	}
 })
