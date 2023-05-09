@@ -20,16 +20,17 @@ local conds = require("luasnip.extras.conditions")
 local conds_expand = require("luasnip.extras.conditions.expand")
 
 
-ls.add_snippets("all", {
-	s('co', {
-		i('console.log($1)')
-	}),
-	s("cortime", {
-		f(function()
-			return os.date "%D -%H:%M"
-		end)
-	}),
-})
+-- ls.add_snippets("all", {
+-- 	s('co', {
+-- 		i('console.log($1)')
+-- 	}),
+-- 	s("cp", {
+-- 		f(function()
+-- 			return vim.fn.expand('%:t:r')
+-- 		end)
+-- 	}),
+-- })
+
 
 ls.add_snippets("lua", {
 	s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) })),
@@ -66,6 +67,55 @@ ls.add_snippets("lua", {
 	)
 })
 
+ls.add_snippets("all", {
+	s(
+		"tg",
+		fmt(
+			[[
+				function {}(value: unknown): value is {} {{
+					return typeof value === "{}"
+				}}
+			]],
+			{
+				i(1, "func name"),
+				i(2, "type"),
+				rep(2)
+			}
+		)
+	),
+	s("cl",
+		{
+			t("console.log("), i(1), t(")")
+		}
+	),
+	s("ea",
+		{
+			t("() => "), i(1)
+		}),
+	s("af",
+		{
+			t("("), i(1), t(") => "), i(2)
+		}),
+	s("im",
+		{
+			t("import "), i(2), t(" from '"), i(1), t("'")
+		}),
+	s(
+		'ifr',
+		fmt(
+			[[
+				if ({}) {{
+					{}
+				}}
+			]],
+			{
+				i(1, ""),
+				c(2, {i(1, {"ODO: something ..."}), t("return")})
+			}
+		)
+	),
+})
+
 ls.add_snippets("javascript", {
 	s("cl",
 		{
@@ -83,7 +133,21 @@ ls.add_snippets("javascript", {
 	s("im",
 		{
 			t("import "), i(2), t(" from '"), i(1), t("'")
-		})
+		}),
+	s(
+		'ifr',
+		fmt(
+			[[
+				if ({}) {{
+					{}
+				}}
+			]],
+			{
+				i(1, ""),
+				c(2, {i(1, {"ODO: something ..."}), t("return")})
+			}
+		)
+	),
 })
 
 

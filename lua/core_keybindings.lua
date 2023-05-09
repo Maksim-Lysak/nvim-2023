@@ -18,10 +18,10 @@ keymap('i', '<leader>.', '<Esc>A', opts)
 
 -- [[ работа с буфером ]]
 -- сохранить текущий буфер
-keymap('', '<M-w>', ':w<CR>', opts)
+keymap('', 'gw', ':w<CR>', opts)
 
 -- сохранить текущий буфер в режиме ввода
-keymap('i', '<M-w>', '<Esc>:w<CR>a', opts)
+keymap('i', 'gw', '<Esc>:w<CR>a', opts)
 
 -- закрыть текущий буфер
 keymap('', 'gq', ':bd<CR>', opts)

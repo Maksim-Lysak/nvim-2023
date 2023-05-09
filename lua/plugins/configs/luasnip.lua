@@ -12,7 +12,7 @@ ls.setup({
 	ext_opts = {
 		[types.choiceNode] = {
 			active = {
-				virt_text = { { "choiceNode", "Comment" } },
+				-- virt_text = { { "choiceNode", "Comment" } },
 			},
 		},
 	},
